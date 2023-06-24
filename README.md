@@ -6,7 +6,7 @@ To install Templify, include it in your project using composer:
 ```json
 {
     "require": {
-        "jensostertag/php-templify": "dev-master"
+        "jensostertag/php-templify": "dev-main"
     }
 }
 ```

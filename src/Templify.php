@@ -13,8 +13,21 @@ class Templify {
      * @param mixed $value Config Value
      * @return void
      */
-    public static function setConfig(string $key, mixed $value) {
+    public static function setConfig(string $key, mixed $value): void {
         self::$config[$key] = $value;
+    }
+
+    /**
+     * Get a Config Value
+     * @param string $key
+     * @return mixed
+     */
+    public static function getConfig(string $key): mixed {
+        if(isset(self::$config[$key])) {
+            return self::$config[$key];
+        }
+
+        return null;
     }
 
     /**
