@@ -1,12 +1,12 @@
 {
-  "name": "jensostertag/php-templify",
-  "description": "A simple PHP Templating Engine",
+  "name": "jensostertag/templify",
+  "description": "A simple Templating Engine for PHP",
   "keywords": [
     "template",
     "engine"
   ],
   "type": "library",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "authors": [
     {
