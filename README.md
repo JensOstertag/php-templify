@@ -1,4 +1,4 @@
-# PHP-Templify
+# Templify for PHP
 Templify is a simple templating engine for PHP. It uses default PHP syntax but handles the logic of displaying, including and fetching the HTML code of template files which makes it very adaptable for any project.
 
 ## Installation
@@ -6,7 +6,7 @@ To install Templify, include it in your project using composer:
 ```json
 {
     "require": {
-        "jensostertag/php-templify": "dev-main"
+        "jensostertag/templify": "1.0.0"
     }
 }
 ```

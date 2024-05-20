@@ -1,6 +1,6 @@
 {
-    "name": "jensostertag/php-templify",
-    "description": "A simple PHP Templating Engine",
+    "name": "jensostertag/templify",
+    "description": "A simple Templating Engine for PHP",
     "keywords": [
         "template",
         "engine"
