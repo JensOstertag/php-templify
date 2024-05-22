@@ -4,7 +4,7 @@ namespace jensostertag\Templify;
 
 use XMLReader;
 
-class TemplifyComponentParser {
+class TemplifyParser {
     private XMLReader $xmlReader;
 
     private array $includeDetails = [
@@ -19,7 +19,7 @@ class TemplifyComponentParser {
         $this->xmlReader = XMLReader::XML($template);
     }
 
-    public function parseXml(): string {
+    public function parse(): string {
         $parsedContent = "";
 
         while($this->xmlReader->read() !== false) {
