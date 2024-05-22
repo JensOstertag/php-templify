@@ -81,4 +81,26 @@ class Templify {
         self::display($template, $variables);
         return ob_get_clean();
     }
+
+    /**
+     * Parses a Templify Template File to a generic PHP Template File, saves the Content to the Cache and returns the Path to the Cache File
+     * @param string $file
+     * @return string
+     */
+    private static function parseTemplateFile(string $file): string {
+        if(!(file_exists($file))) {
+            error_log("Could not find Component File \"{$file}\".");
+            return "";
+        }
+
+        $templateContents = file_get_contents($file);
+
+        $templifyParser = new TemplifyParser($templateContents);
+        $parsedFileContents = $templifyParser->parse();
+
+        // TODO: Generate cache key
+        // TODO: Save file to cache
+
+        return "";
+    }
 }
